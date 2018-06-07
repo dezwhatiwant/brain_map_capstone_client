@@ -1,0 +1,4 @@
+<% @brain_areas.each do |brain_area| %>
+  <h2><a href="/client/brains/<%= brain_area["id"] %>"><%= brain_area["name"] %></a></h2>  
+  <h3><%= brain_area["description"] %></h3>
+<% end %>
