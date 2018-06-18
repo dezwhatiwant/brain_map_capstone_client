@@ -1,2 +1,20 @@
-<h2><%= @brain_area["name"] %></h2>
-<h2><%= @brain_area["description"] %></h2>
+<h1><%= @brain_area['name'] %></h1>
+<h2><%= @brain_area['description'] %></h2>
+<br>
+<!-- ?each loop -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="/client/brain/">
+    <circle cx="50" cy="50" r="25"/>
+  </a>
+</svg>
+
+<h2><strong>Articles: </strong><a href="<%= @brain_area['articles'][0]['link'] %>"> <%= @brain_area['articles'][0]['name'] %> </a></h2>
+<br>
+<h2><strong>Associated Diseases: </strong><%= @brain_area['diseases'][0]['name'] %></h2>
+<h4><%= @brain_area['diseases'][0]['description'] %></h4>
+<br>
+<br>
+<br>
+<br>
+<h6>Associated Brain Areas</h6>
+<h6><%= @brain_area %><a href=""></a></h6>

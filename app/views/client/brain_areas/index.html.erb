@@ -1,4 +1,10 @@
 <% @brain_areas.each do |brain_area| %>
-  <h2><a href="/client/brains/<%= brain_area["id"] %>"><%= brain_area["name"] %></a></h2>  
-  <h3><%= brain_area["description"] %></h3>
+  <h2><a href="/client/brain/<%= brain_area["id"] %>"><%= brain_area["name"] %></a></h2>  
 <% end %>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="/client/brain/">
+    <circle cx="190" cy="50" r="25"/>
+  </a>
+</svg>
+
